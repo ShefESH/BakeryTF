@@ -1,0 +1,29 @@
+.content {
+    margin: 5%;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.get-recipe {
+    margin: 5%;
+    border: 1px solid grey;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+
+form {
+    margin: auto auto;
+}
+
+form p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+label {
+    width: 150px;
+}
