@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Admin{% endblock %}
+
+{% block navbar %}
+
+<nav class="navbar navbar-default-inverted">
+  <ul>
+    <img src="static/seshlogo.png">
+  </ul>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+  
+<h1>CTF Management Console</h1>
+
+{% if error != None %}
+  <strong id="error">{{ error }}</strong>
+{% endif %}
+
+<p>Admins Login Here</p>
+<form action='/login' method='POST'>
+  <label for="username">Username:</label>
+  <input name='username'></input>
+  <label for="password">Password:</label>
+  <input name='password'></input>
+  <input type='submit'>
+</form>
+
+{% endblock %}

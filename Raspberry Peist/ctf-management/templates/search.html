@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}Challenge Search{% endblock %}
+
+{% block navbar %}
+
+<nav class="navbar navbar-default-inverted d-flex align-items-center">
+<!-- <nav class="navbar navbar-default-inverted"> -->
+  <ul>
+    <img src="/static/seshlogo.png">
+    <form class="form-inline my-2 my-lg-0" style="margin: 0;" method="post" action="/logout">
+      <div class="button-holder">
+        <input type="submit" value="Logout" name="logout">
+      </div>
+    </form>
+    <a href="/search">Search</a>
+  </ul>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+  
+  <h1>Search Page</h1>
+
+  <p>Search challenges below</p>
+
+  <form action='/admin/search' method='POST'>
+    <label for="search_term">Search Term:</label>
+    <input name='search_term'></input>
+    <input type='submit'>
+  </form>
+
+  <h3>All Challenges</h3>
+
+  <table>
+      <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+      </tr>
+      {% for challenge in challenges %}
+      <tr>
+          <td>{{ challenge[0] }}</td>
+          <td>{{ challenge[1] }}</td>
+          <td>{{ challenge[2] }}</td>
+      </tr>
+      {% endfor %}
+  </table>
+
+{% endblock %}

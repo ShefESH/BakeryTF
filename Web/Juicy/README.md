@@ -27,6 +27,8 @@ Then connect to the website on localhost:5000
 
 ### Juicy Part 1
 
+Built by Nicki
+
 <details>
 
 <summary>Spoilers</summary>
@@ -38,6 +40,8 @@ After setting this extra field to be 'admin', you will gain a flag for the chall
 </details>
 
 ### Juicy Part 2
+
+Built by Nick
 
 <details>
 

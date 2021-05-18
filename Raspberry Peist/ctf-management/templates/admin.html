@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Admin{% endblock %}
+
+{% block navbar %}
+
+<nav class="navbar navbar-default-inverted d-flex align-items-center">
+<!-- <nav class="navbar navbar-default-inverted"> -->
+  <ul>
+    <img src="/static/seshlogo.png">
+    <form class="form-inline my-2 my-lg-0" style="margin: 0;" method="post" action="/logout">
+      <div class="button-holder">
+        <input type="submit" value="Logout" name="logout">
+      </div>
+    </form>
+    <a href="/admin/search">Challenge Search</a>
+  </ul>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+  
+  <h1>Admin Page</h1>
+
+  <h2>Welcome {{ username }}!</h2>
+
+  <p>Remember: our SSH runs on port 2222 since Brooks spilled coffee on our NIC! Login as the intern user :)</p>
+
+  <p>sesh{adm1nS_ne3D_to_S4nit1Ze}</p>
+
+{% endblock %}

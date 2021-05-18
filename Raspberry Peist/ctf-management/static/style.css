@@ -1,0 +1,87 @@
+:root {
+    --backgroundColor: #1c1e29;
+    --backgroundColorLight: #33354b;
+    --bodyColor: #fff;
+    --pinkColor: #eb3c68;
+    --lightBlue: #00e7e7;
+    --bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#content, #footer {
+    padding-left: 10px;
+}
+
+.navbar {
+    padding-left: 0;
+    border-radius: 0;
+}
+
+nav {
+    background-color: var(--backgroundColorLight);
+    padding: 0 10% 0 10%;
+    margin: 0;
+    border: 0;
+    padding-bottom: 0.2em;
+    /* display: inline-block; */
+    /* text-align: center; */
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--lightBlue);
+    display: inline-block;
+    padding: 26px;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav input[type="submit"] {
+    font-size: 1.6rem;
+    outline : none;
+    color: var(--lightBlue);
+    display: inline-block;
+    padding: 0.7em;
+    background-color: var(--backgroundColorLight);
+    border-style: none;
+}
+
+nav img {
+    max-width: 78px;
+    max-height: 78px;
+    padding: 4px;
+    /* display: inline-block; */
+}
+
+.button-holder {
+    text-align: center;
+}
+
+nav form {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+nav input[type="submit"]:hover {
+    color: #23527c;
+}
+
+#error {
+    color: #eb3c68;
+    
+}
+
+#footer {
+    padding-top: 30%;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+{% extends "bootstrap/base.html" %}
+
+<html>
+  <head>
+    {% block head %}
+    {% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+    <title>{% block title %}{% endblock %} - CTF Management Console</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    {% block navbar %}{% endblock %}
+    <div id="wrapper">
+      <div id="content">{% block content %}{% endblock %}</div>
+      <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2021 by <a href="https://shefesh.com">Sheffield Ethical Student Hackers</a>.
+        {% endblock %}
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

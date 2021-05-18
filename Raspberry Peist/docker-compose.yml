@@ -1,0 +1,10 @@
+services:
+    ctf-shell:
+      build: .
+      image: ctf-shell:latest
+      container_name: ctf-shell
+      hostname: SESH-PI
+      restart: on-failure
+      ports:
+        - '2222:22'
+        - '80:5000'
