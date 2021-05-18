@@ -50,8 +50,6 @@ As `master-baker` we have access to a file `.egg-cracker` that has a SUID bit - 
 
 ## Running the Challenge
 
-## Running the Challenge
-
 To run the challenge locally, simply use:
 
 ```bash
@@ -59,6 +57,12 @@ $ docker-compose up
 ```
 
 This will copy across all the necessary files to the container and start the webserver.
+
+## Accessing the Challenge
+
+The output of `docker-compose up` should give you an IP address - visit this to start the challenge!
+
+If you can't find the IP, running `ifconfig` should display a docker interface that will list the IP.
 
 ## Solution
 
