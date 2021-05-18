@@ -1,0 +1,38 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+    <header>
+        <img src='static/images/logo.png'>
+        <h1>Juicy Shop<a href="/register">Register</a></h1>
+
+    </header>
+
+    {% for juice in ['apple', 'banana', 'flag', 'orange'] %}
+        <div class="item">
+            <img src="static/images/{{juice}}.png">
+            <p>Some very nice {{juice}} juice. Buy now!</p>
+            <form action='/buy'>
+                {% if juice == 'flag' %}
+                    <input hidden=true name='user' value=''>
+                {% endif %}
+                <input hidden=true name='juice' value='{{juice}}'>
+                <input type="submit" value="Buy" class='buy'>
+            </form>
+        </div>    
+    {% endfor %}
+
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class=flashes>
+            {% for category, message in messages %}
+            <p class="{{ category }}">{{ message }}</p>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+{% endblock %}

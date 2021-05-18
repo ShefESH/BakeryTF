@@ -1,0 +1,41 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Login</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action="/signin" method="POST">-->
+<!--        <input type="username" name="username" placeholder="Username">-->
+<!--        <input type="password" name="password" placeholder="Password">-->
+<!--        <input type="submit" value="Log in">-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juicy Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body>
+<h2>Juicy Registration</h2><br>
+<div class="login">
+    <form id="login" method="POST" action="/register">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="username" name="username" id="username" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <br><br>
+        <input type="submit" name="log" id="log" value="Register account">
+        <br><br>
+    </form>
+</div>
+</body>
+</html>

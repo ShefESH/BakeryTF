@@ -1,0 +1,49 @@
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+header a {
+    float: right;
+    right: 0;
+    padding: 10px;
+    text-align: right;
+    color: aqua;
+    font-size: 2rem;
+    background-color: blueviolet;
+}
+
+header img {
+    height: 100px;
+    float: left;
+    padding: 10px;
+}
+
+header {
+    background-color: blueviolet;
+    padding: 10px;
+    height: 120px;
+}
+
+header h1 {
+    color: aqua;
+    /*float: center;*/
+    padding: 10px;
+}
+
+.item img {
+    width: 250px;
+
+}
+
+.item {
+    border: green 3px solid;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+input {
+    width: 100%;
+    background-color: darkorange;
+}
