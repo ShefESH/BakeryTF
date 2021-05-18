@@ -1,5 +1,17 @@
 # Saucy Part 3
 
+## Overview
+
+A web app exploring a vulnerability allowing the viewing of the source code, and a classic OWASP vulnerability providing the solution. Requires some code analysis and knowledge of common web vulnerabilities to solve.
+
+<details>
+
+<summary>Spoilers</summary>
+
+PHP web app with an LFI revealing the source code and a PHP deserialisation vulnerability.
+
+</details>
+
 ## Deploy This Challenge Manually
 
 ### Install MySQL
@@ -56,12 +68,24 @@ Run the following command, supplying the `username` and `password` you set:
 $ mysql -u [username] -p < seed.sql
 ```
 
-## Run
+### Start the Challenge
+
+Run the PHP server:
 
 ```bash
 php -S locahost:8002
 ```
 
-## Start the Challenge
-
 Visit [http://localhost:8002](http://localhost:8002)
+
+## Solution
+
+<details>
+
+<summary>Spoilers</summary>
+
+### Overview
+
+PHP web app with an LFI revealing the source code and a PHP deserialisation vulnerability.
+
+</details>
