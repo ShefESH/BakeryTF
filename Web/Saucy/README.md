@@ -12,6 +12,6 @@ A web app exploring a vulnerability allowing the viewing of the source code, and
 
 <summary>Spoilers</summary>
 
-PHP web app with an LFI revealing the source code and a PHP deserialisation vulnerability.
+The challenge is a PHP web app with an LFI revealing the source code and a PHP deserialisation vulnerability. Players must create a 'recipe recipe' that is pulled down from the database and that reads a second recipe from the database when it is unserialised, which contains the flag.
 
 </details>
